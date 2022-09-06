@@ -64,11 +64,19 @@
 
             //closeBtnがクリックされた時に実行する関数を定義
             closeBtn.onclick = function () {
-                // 
+                // panelが消える
                 panel.parentNode.removeChild(panel);
             }
-
         }
+
+        // // displayMes sage関数を実行
+       displayMessage();
+
+        // html要素内にあるbutton要素をbtnに代入
+        const btn = document.querySelector('button');
+        // btnがクリックされた時displayMessageを呼び出す
+        btn.addEventListener('click',displayMessage);
+
     </script>
 </body>
 
